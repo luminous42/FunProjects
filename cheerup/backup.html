@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Pixel Hugs</title>
+    <style>
+      body {
+        font-family: "Courier New", monospace;
+        background-color: #ffebf3;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        color: #5a3d5c;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border: 4px solid #ff85a2;
+        box-shadow: 8px 8px 0 #ffc2d1;
+        position: relative;
+      }
+
+      .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        color: #ff5c8a;
+        margin: 0;
+      }
+
+      .jumping-animation {
+        margin: 20px auto;
+        max-width: 150px;
+      }
+
+      .message-box {
+        background-color: #fff5f7;
+        border: 3px solid #ffb6c1;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+
+      button {
+        background-color: #ff85a2;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-family: "Courier New", monospace;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 10px;
+        box-shadow: 4px 4px 0 #ffc2d1;
+        transition: all 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff5c8a;
+        transform: translateY(-2px);
+      }
+
+      #response {
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .cherry-small {
+        width: 40px;
+        height: 40px;
+      }
+
+      .cat-image {
+        width: 35px;
+        vertical-align: text-bottom;
+        margin-left: 2px;
+        display: inline-block;
+      }
+
+      .strawberry-image {
+        width: 25px;
+        vertical-align: text-bottom;
+        margin-left: 2px;
+        display: inline-block;
+      }
+
+      .music-control {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: #ff5c8a;
+      }
+
+      .music-control:hover {
+        color: #ff85a2;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        .container {
+          width: 90%;
+          padding: 25px;
+          margin: 15px auto;
+          min-height: 90vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        h1 {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+
+        .message-box {
+          padding: 20px;
+          margin: 25px 0;
+        }
+
+        .message-box p {
+          font-size: 22px;
+          line-height: 1.6;
+          margin: 15px 0;
+        }
+
+        .jumping-animation {
+          max-width: 180px;
+          margin: 25px auto;
+        }
+
+        .cat-image {
+          width: 45px;
+        }
+
+        .strawberry-image {
+          width: 40px;
+        }
+
+        button {
+          padding: 16px 32px;
+          font-size: 20px;
+          margin: 15px;
+          width: 80%;
+          max-width: 300px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .cherry-small {
+          width: 45px;
+          height: 45px;
+        }
+
+        .music-control {
+          font-size: 28px;
+          top: 20px;
+          right: 20px;
+        }
+
+        #response {
+          min-height: 100px;
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        .container {
+          padding: 18px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        .message-box p {
+          font-size: 18px;
+        }
+
+        button {
+          padding: 12px 20px;
+          font-size: 16px;
+          width: 95%;
+        }
+
+        .cat-image {
+          width: 35px;
+        }
+
+        .strawberry-image {
+          width: 30px;
+        }
+
+        .jumping-animation {
+          max-width: 140px;
+        }
+
+        #response {
+          font-size: 18px;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        h1 {
+          font-size: 22px;
+        }
+
+        button {
+          padding: 10px 16px;
+          font-size: 15px;
+        }
+
+        .music-control {
+          font-size: 24px;
+          top: 10px;
+          right: 10px;
+        }
+
+        .message-box {
+          padding: 15px;
+        }
+
+        .jumping-animation {
+          max-width: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Audio element (hidden) -->
+    <audio
+      id="bgMusic"
+      loop
+    >
+      <source
+        src="./assets/bgMusic.mp4"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <div class="container">
+      <!-- Music toggle button -->
+      <button
+        class="music-control"
+        id="musicToggle"
+      >
+        ♪
+      </button>
+
+      <div class="title-container">
+        <h1>Cheers for You</h1>
+        <img
+          src="./assets/cherry.png"
+          class="cherry-small"
+          alt="Kawaii cherry pixel art"
+        />
+      </div>
+
+      <!-- Jumping animation GIF -->
+      <img
+        src="./assets/jumpin.gif"
+        class="jumping-animation"
+        alt="Cute jumping animation"
+      />
+
+      <div class="message-box">
+        <p>
+          Dear Strong One
+          <img
+            src="./assets/cat.png"
+            class="cat-image"
+            alt="Cute pixel cat"
+          />
+        </p>
+        <p>
+          You don't have to be perfect to be loved
+          <img
+            src="./assets/strawberry.png"
+            class="strawberry-image"
+            alt="Cute pixel strawberry"
+          />
+        </p>
+        <p>Your feelings are valid.</p>
+        <p>Your childhood wasn't your fault.</p>
+      </div>
+
+      <button onclick="showCompliment()">Click for a Compliment</button>
+      <button onclick="showJoke()">Click for a Bad Joke</button>
+
+      <div
+        id="response"
+        class="message-box"
+        style="display: none"
+      >
+        <!-- Responses will appear here -->
+      </div>
+    </div>
+
+    <script>
+      const bgMusic = document.getElementById("bgMusic");
+      const musicToggle = document.getElementById("musicToggle");
+      let isMusicPlaying = false;
+
+      function enableAudio() {
+        bgMusic.volume = 0.3;
+        bgMusic
+          .play()
+          .then(() => {
+            isMusicPlaying = true;
+            musicToggle.textContent = "♫";
+          })
+          .catch((e) => {
+            console.log("Audio playback failed:", e);
+          });
+      }
+
+      musicToggle.addEventListener("click", () => {
+        if (isMusicPlaying) {
+          bgMusic.pause();
+          musicToggle.textContent = "♪";
+        } else {
+          bgMusic.play();
+          musicToggle.textContent = "♫";
+        }
+        isMusicPlaying = !isMusicPlaying;
+      });
+
+      document.body.addEventListener("click", enableAudio, { once: true });
+
+      const compliments = [
+        "You're stronger than you think! 💪✨",
+        "The world is better with you in it! 🌍💖",
+        "The childhood you lost lives on in the compassion you show others today. 🧸💞",
+        "Perfect is boring. You're interesting, complex, and wonderfully human. 🌈🧠💫",
+        "The space you hold for others deserves to be held for you too. 🤗💖",
+        "You weren't too much. They just didn't have enough to give. 💔➡️💖",
+        "You deserve kindness, especially from yourself! 🌷🪞",
+        "Your feelings matter! 😌💭",
+        "You're enough exactly as you are! 🌟💛",
+      ];
+
+      const jokes = [
+        "Why don't eggs tell jokes? They'd crack each other up!",
+        "What do you call a fake noodle? An impasta!",
+        "How do you organize a space party? You planet!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "What's brown and sticky? A stick!",
+        "What do you call a sad strawberry? A blueberry! (I know, it's terrible!)",
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "How does a penguin build its house? Igloos it together!",
+      ];
+
+      function showCompliment() {
+        const response = document.getElementById("response");
+        response.style.display = "flex";
+        response.innerHTML =
+          "<p>" +
+          compliments[Math.floor(Math.random() * compliments.length)] +
+          "</p>";
+      }
+
+      function showJoke() {
+        const response = document.getElementById("response");
+        response.style.display = "flex";
+        response.innerHTML =
+          "<p>" +
+          jokes[Math.floor(Math.random() * jokes.length)] +
+          "</p><p>😄</p>";
+      }
+    </script>
+  </body>
+</html>
