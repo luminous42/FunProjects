@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D14A000000000000000004B1 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000065 /* AppGroup.swift */; };
+		D14A000000000000000004B2 /* DailySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000066 /* DailySchedule.swift */; };
+		D14A000000000000000004B3 /* PhotoManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000067 /* PhotoManifest.swift */; };
+		D14A000000000000000004BB /* DaylockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A0000000000000000006F /* DaylockApp.swift */; };
+		D14A000000000000000004BC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000070 /* Theme.swift */; };
+		D14A000000000000000004BD /* PhotoLibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000071 /* PhotoLibraryStore.swift */; };
+		D14A000000000000000004BE /* AlbumSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000072 /* AlbumSyncService.swift */; };
+		D14A000000000000000004BF /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000073 /* PhotoPicker.swift */; };
+		D14A000000000000000004C0 /* GetTodayPhotoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000074 /* GetTodayPhotoIntent.swift */; };
+		D14A000000000000000004C1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000075 /* RootView.swift */; };
+		D14A000000000000000004C2 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000076 /* TodayView.swift */; };
+		D14A000000000000000004C3 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000077 /* LibraryView.swift */; };
+		D14A000000000000000004C4 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000078 /* GuideView.swift */; };
+		D14A00000000000000000529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000079 /* Assets.xcassets */; };
+		D14A00000000000000000518 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000068 /* PrivacyInfo.xcprivacy */; };
+		D14A00000000000000000597 /* DaylockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000083 /* DaylockWidget.swift */; };
+		D14A00000000000000000579 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000065 /* AppGroup.swift */; };
+		D14A0000000000000000057A /* DailySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000066 /* DailySchedule.swift */; };
+		D14A0000000000000000057B /* PhotoManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000067 /* PhotoManifest.swift */; };
+		D14A000000000000000005E0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000068 /* PrivacyInfo.xcprivacy */; };
+		D14A0000000000000000001D /* DaylockWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D14A00000000000000000005 /* DaylockWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D14A0000000000000000000D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D14A00000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14A00000000000000000003;
+			remoteInfo = DaylockWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D14A0000000000000000000C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D14A0000000000000000001D /* DaylockWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D14A00000000000000000004 /* Daylock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daylock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14A00000000000000000005 /* DaylockWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DaylockWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14A00000000000000000065 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		D14A00000000000000000066 /* DailySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySchedule.swift; sourceTree = "<group>"; };
+		D14A00000000000000000067 /* PhotoManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManifest.swift; sourceTree = "<group>"; };
+		D14A00000000000000000068 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D14A0000000000000000006F /* DaylockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaylockApp.swift; sourceTree = "<group>"; };
+		D14A00000000000000000070 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D14A00000000000000000071 /* PhotoLibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryStore.swift; sourceTree = "<group>"; };
+		D14A00000000000000000072 /* AlbumSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSyncService.swift; sourceTree = "<group>"; };
+		D14A00000000000000000073 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		D14A00000000000000000074 /* GetTodayPhotoIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodayPhotoIntent.swift; sourceTree = "<group>"; };
+		D14A00000000000000000075 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		D14A00000000000000000076 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		D14A00000000000000000077 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		D14A00000000000000000078 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		D14A00000000000000000079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D14A0000000000000000007A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14A0000000000000000007B /* Daylock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Daylock.entitlements; sourceTree = "<group>"; };
+		D14A00000000000000000083 /* DaylockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaylockWidget.swift; sourceTree = "<group>"; };
+		D14A00000000000000000084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14A00000000000000000085 /* DaylockWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaylockWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D14A0000000000000000000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14A0000000000000000000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D14A00000000000000000018 = {
+			isa = PBXGroup;
+			children = (
+				D14A0000000000000000001A /* Shared */,
+				D14A0000000000000000001B /* Daylock */,
+				D14A0000000000000000001C /* DaylockWidget */,
+				D14A00000000000000000019 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D14A00000000000000000019 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D14A00000000000000000004 /* Daylock.app */,
+				D14A00000000000000000005 /* DaylockWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D14A0000000000000000001A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D14A00000000000000000065 /* AppGroup.swift */,
+				D14A00000000000000000066 /* DailySchedule.swift */,
+				D14A00000000000000000067 /* PhotoManifest.swift */,
+				D14A00000000000000000068 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D14A0000000000000000001B /* Daylock */ = {
+			isa = PBXGroup;
+			children = (
+				D14A0000000000000000006F /* DaylockApp.swift */,
+				D14A00000000000000000070 /* Theme.swift */,
+				D14A00000000000000000071 /* PhotoLibraryStore.swift */,
+				D14A00000000000000000072 /* AlbumSyncService.swift */,
+				D14A00000000000000000073 /* PhotoPicker.swift */,
+				D14A00000000000000000074 /* GetTodayPhotoIntent.swift */,
+				D14A00000000000000000075 /* RootView.swift */,
+				D14A00000000000000000076 /* TodayView.swift */,
+				D14A00000000000000000077 /* LibraryView.swift */,
+				D14A00000000000000000078 /* GuideView.swift */,
+				D14A00000000000000000079 /* Assets.xcassets */,
+				D14A0000000000000000007A /* Info.plist */,
+				D14A0000000000000000007B /* Daylock.entitlements */,
+			);
+			path = Daylock;
+			sourceTree = "<group>";
+		};
+		D14A0000000000000000001C /* DaylockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D14A00000000000000000083 /* DaylockWidget.swift */,
+				D14A00000000000000000084 /* Info.plist */,
+				D14A00000000000000000085 /* DaylockWidget.entitlements */,
+			);
+			path = DaylockWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D14A00000000000000000002 /* Daylock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14A00000000000000000010 /* Build configuration list for PBXNativeTarget "Daylock" */;
+			buildPhases = (
+				D14A00000000000000000006 /* Sources */,
+				D14A0000000000000000000A /* Frameworks */,
+				D14A00000000000000000008 /* Resources */,
+				D14A0000000000000000000C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14A0000000000000000000E /* PBXTargetDependency */,
+			);
+			name = Daylock;
+			productName = Daylock;
+			productReference = D14A00000000000000000004 /* Daylock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D14A00000000000000000003 /* DaylockWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14A00000000000000000011 /* Build configuration list for PBXNativeTarget "DaylockWidget" */;
+			buildPhases = (
+				D14A00000000000000000007 /* Sources */,
+				D14A0000000000000000000B /* Frameworks */,
+				D14A00000000000000000009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaylockWidget;
+			productName = DaylockWidget;
+			productReference = D14A00000000000000000005 /* DaylockWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D14A00000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = luminous42;
+				TargetAttributes = {
+					D14A00000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D14A00000000000000000003 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = D14A0000000000000000000F /* Build configuration list for PBXProject "Daylock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D14A00000000000000000018;
+			productRefGroup = D14A00000000000000000019 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D14A00000000000000000002 /* Daylock */,
+				D14A00000000000000000003 /* DaylockWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D14A00000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14A00000000000000000529 /* Assets.xcassets in Resources */,
+				D14A00000000000000000518 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14A00000000000000000009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14A000000000000000005E0 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D14A00000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14A000000000000000004B1 /* AppGroup.swift in Sources */,
+				D14A000000000000000004B2 /* DailySchedule.swift in Sources */,
+				D14A000000000000000004B3 /* PhotoManifest.swift in Sources */,
+				D14A000000000000000004BB /* DaylockApp.swift in Sources */,
+				D14A000000000000000004BC /* Theme.swift in Sources */,
+				D14A000000000000000004BD /* PhotoLibraryStore.swift in Sources */,
+				D14A000000000000000004BE /* AlbumSyncService.swift in Sources */,
+				D14A000000000000000004BF /* PhotoPicker.swift in Sources */,
+				D14A000000000000000004C0 /* GetTodayPhotoIntent.swift in Sources */,
+				D14A000000000000000004C1 /* RootView.swift in Sources */,
+				D14A000000000000000004C2 /* TodayView.swift in Sources */,
+				D14A000000000000000004C3 /* LibraryView.swift in Sources */,
+				D14A000000000000000004C4 /* GuideView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14A00000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14A00000000000000000597 /* DaylockWidget.swift in Sources */,
+				D14A00000000000000000579 /* AppGroup.swift in Sources */,
+				D14A0000000000000000057A /* DailySchedule.swift in Sources */,
+				D14A0000000000000000057B /* PhotoManifest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D14A0000000000000000000E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14A00000000000000000003 /* DaylockWidget */;
+			targetProxy = D14A0000000000000000000D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D14A00000000000000000012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_UNUSED_VARIABLE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D14A00000000000000000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_UNUSED_VARIABLE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D14A00000000000000000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Daylock/Daylock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Daylock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Daylock;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Daylock saves copies of the photos you choose into a Daylock album so the lock screen can rotate through them.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Daylock uses your photo library to create and update the Daylock album for the lock screen.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luminous42.daylock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D14A00000000000000000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Daylock/Daylock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Daylock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Daylock;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Daylock saves copies of the photos you choose into a Daylock album so the lock screen can rotate through them.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Daylock uses your photo library to create and update the Daylock album for the lock screen.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luminous42.daylock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D14A00000000000000000016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = DaylockWidget/DaylockWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaylockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Daylock;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luminous42.daylock.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D14A00000000000000000017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = DaylockWidget/DaylockWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaylockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Daylock;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luminous42.daylock.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D14A0000000000000000000F /* Build configuration list for PBXProject "Daylock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14A00000000000000000012 /* Debug */,
+				D14A00000000000000000013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14A00000000000000000010 /* Build configuration list for PBXNativeTarget "Daylock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14A00000000000000000014 /* Debug */,
+				D14A00000000000000000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14A00000000000000000011 /* Build configuration list for PBXNativeTarget "DaylockWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14A00000000000000000016 /* Debug */,
+				D14A00000000000000000017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D14A00000000000000000001 /* Project object */;
+}
